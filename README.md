@@ -1,6 +1,12 @@
 # OctoDash-docker
 Runs OctoDash in an Ubuntu docker container.
 
-This was created because I have dashboard devices running Alpine Linux, which uses
-libmusl (rather than glibc). OctoDash uses electron, which doesn't work with libmusl.
-Hence OctoDash doesn't work on Alpine Linux.
+This was created because I have dashboard devices running Alpine Linux. Alpine Linux
+uses libmusl (rather than glibc). However electron (which runs OctoDash) doesn't work
+with libmusl.
+
+I run the container with a `$DISPLAY` envar to make the OctoDash appear on the correct
+screen.
+
+I don't believe OctoDash needs everything that's installed in the container, but it
+just installs what the deb files say they need.
