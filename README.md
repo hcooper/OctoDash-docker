@@ -8,5 +8,5 @@ with libmusl.
 I run the container with a `$DISPLAY` envvar to make OctoDash appear on the correct
 screen.
 
-I don't believe OctoDash needs everything that's installed in the container, but it
-just installs what the deb files say they need.
+The image is large, and I don't believe OctoDash needs everything that's installed. But
+for simplicity the Dockerfile just installs everything the deb files say they need.
